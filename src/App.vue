@@ -28,7 +28,9 @@ export default {
   <ul>
     <li v-for="task in tasks" :key="task">{{ task }}</li>
   </ul>
+  <!-- <a v-bind:href="link">Go to google</a> -->
   <a :href="link">Go to google</a>
   <br />
-  <button v-on:click="toggleStatus">Toggle status</button>
+  <!-- <button v-on:click="toggleStatus">Toggle status</button> -->
+  <button @click="toggleStatus">Toggle status</button>
 </template>
